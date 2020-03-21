@@ -159,30 +159,16 @@ textarea {
     page-break-after: avoid;
   }
 }
+/* -------------- END OF BOILERPLATE ---------------*/
 * {
   margin: 0;
   padding: 0;
 }
 body {
   background: black;
-  cursor: url(/img/cursor.svg), auto;
 }
 canvas {
   display: block;
-}
-@font-face {
-  font-family: "MATRIX";
-  src: url("../css/fonts/matrix.eot");
-  /* IE9 Compat Modes */
-  src: url("../css/fonts/matrix.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../css/fonts/matrix.otf") format("opentype"),
-    /* Open Type Font */ url("../css/fonts/matrix.svg") format("svg"),
-    /* Legacy iOS */ url("../css/fonts/matrix.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../css/fonts/matrix.woff") format("woff"),
-    /* Modern Browsers */ url("../css/fonts/matrix.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
 }
 .matrix {
   font-family: "MATRIX";
@@ -281,4 +267,18 @@ textarea,
   to {
     opacity: 1;
   }
+}
+@font-face {
+  font-family: "MATRIX";
+  src: url("../css/fonts/matrix.eot");
+  /* IE9 Compat Modes */
+  src: url("../css/fonts/matrix.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../css/fonts/matrix.otf") format("opentype"),
+    /* Open Type Font */ url("../css/fonts/matrix.svg") format("svg"),
+    /* Legacy iOS */ url("../css/fonts/matrix.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../css/fonts/matrix.woff") format("woff"),
+    /* Modern Browsers */ url("../css/fonts/matrix.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }

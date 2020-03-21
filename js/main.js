@@ -1,5 +1,6 @@
 var skull = document.getElementById("skull");
 var loading = document.getElementById("loading");
+var audio = document.getElementById("player");
 
 skull.setAttribute("draggable", false);
 loading.setAttribute("draggable", false);
@@ -7,17 +8,20 @@ loading.setAttribute("draggable", false);
 document.addEventListener("contextmenu", event => event.preventDefault());
 
 skull.style.display = "none";
+document.body.style.cursor = "none";
 
 setTimeout(function() {
   skull.style.display = "block";
 }, 150);
 
 setTimeout(function() {
+  audio.pause();
+  document.body.style.cursor = "url('/img/cursor.png'), auto";
   marqueeTitle("WELCOME TO HACKER.NET", "...", 100);
   skull.style.display = "none";
   loading.style.display = "none";
   setInterval(draw, 50);
-}, 4450);
+}, 4545);
 
 /* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
 function marqueeTitle(c, a, m) {
@@ -28,11 +32,8 @@ function marqueeTitle(c, a, m) {
   }, m || 300);
 }
 
-$("#container").on("mousemove", function(e) {
-  $("#cursor").offset({
-    left: e.pageX - cursorOffset.left,
-    top: e.pageY - cursorOffset.top
-  });
+$(document).ready(function() {
+  $("#loading").attr("src", "/img/loading.gif?" + Math.random());
 });
 
 //Credit: Techgokul (https://gist.github.com/Techgokul/e434ea602bda6840d5ebf95c4be5ebeb)
