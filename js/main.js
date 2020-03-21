@@ -2,6 +2,8 @@ var skull = document.getElementById("skull");
 var loading = document.getElementById("loading");
 var audio = document.getElementById("player");
 
+document.title = "Loading...";
+
 skull.setAttribute("draggable", false);
 loading.setAttribute("draggable", false);
 
