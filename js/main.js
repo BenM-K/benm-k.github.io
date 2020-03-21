@@ -20,7 +20,7 @@ setTimeout(function() {
   marqueeTitle("WELCOME TO HACKER.NET", "...", 100);
   skull.style.display = "none";
   loading.style.display = "none";
-  setInterval(draw, 50);
+  setInterval(draw, 60);
 }, 4550);
 
 /* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
@@ -29,12 +29,26 @@ function marqueeTitle(c, a, m) {
   setInterval(function() {
     title = title.substring(1) + title.charAt(0);
     document.title = title;
-  }, m || 300);
+  }, m || 100);
 }
 
 $(document).ready(function() {
   $("#loading").attr("src", "/img/loading.gif?" + Math.random());
 });
+
+$(function() {
+  resizeCanvas();
+});
+
+$(window).on("resize", function() {
+  resizeCanvas();
+});
+
+function resizeCanvas() {
+  var canvas = $("#c");
+  canvas.css("width", $(window).width());
+  canvas.css("height", $(window).height());
+}
 
 //Credit: Techgokul (https://gist.github.com/Techgokul/e434ea602bda6840d5ebf95c4be5ebeb)
 //#region MATRIX
@@ -63,20 +77,20 @@ var drops = [];
 //X below is the Y coordinate
 //1 = y co-ordinate of the drop (same for every drop initially)
 for (var x = 0; x < columns; x++) drops[x] = 1;
-
 //Drawing the characters
 function draw() {
   //Black BG for the canvas
   //Translucent background to show trail
   ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
   ctx.fillRect(0, 0, c.width, c.height);
-
   ctx.fillStyle = "#0F0"; //green text
   ctx.font = font_size + "px arial";
+
   //Looping over drops
   for (var i = 0; i < drops.length; i++) {
     //A random letter to print
     var text = letters[Math.floor(Math.random() * letters.length)];
+
     //x = i*font_size, y = value of drops[i]*font_size
     ctx.fillText(text, i * font_size, drops[i] * font_size);
 
