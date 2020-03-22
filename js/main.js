@@ -7,6 +7,7 @@ var startupAudio = document.getElementById("startup");
 var bgAudio = document.getElementById("bg");
 
 bgAudio.pause();
+
 $(".title").hide();
 
 skull.setAttribute("draggable", false);
@@ -33,7 +34,7 @@ setTimeout(function() {
 
 setTimeout(function() {
   $(".title").show();
-}, 7500);
+}, 7000);
 
 /* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
 function marqueeTitle(c, a, m) {
