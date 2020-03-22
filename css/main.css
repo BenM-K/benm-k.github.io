@@ -191,14 +191,14 @@ canvas {
   font-size: 50px;
   font-size: 2vw;
   color: #0f0;
-  /* display: flex;
+  display: flex;
   justify-content: center;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  -webkit-animation: fadein 3s;
+  /* -webkit-animation: fadein 3s;
   -moz-animation: fadein 3s;
   -ms-animation: fadein 3s;
   -o-animation: fadein 3s;
