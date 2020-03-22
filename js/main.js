@@ -1,9 +1,13 @@
+//TODO:
+//Audio sometimes doesn't play (wait until DOM is ready?)
+
 var skull = document.getElementById("skull");
 var loading = document.getElementById("loading");
 var startupAudio = document.getElementById("startup");
 var bgAudio = document.getElementById("bg");
 
 bgAudio.pause();
+$(".title").hide();
 
 skull.setAttribute("draggable", false);
 loading.setAttribute("draggable", false);
@@ -26,6 +30,10 @@ setTimeout(function() {
   loading.style.display = "none";
   setInterval(draw, 60);
 }, 4550);
+
+setTimeout(function() {
+  $(".title").show();
+}, 7500);
 
 /* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
 function marqueeTitle(c, a, m) {

@@ -172,10 +172,25 @@ body {
 canvas {
   display: block;
 }
-.matrix {
+@font-face {
+  font-family: "MATRIX";
+  src: url("../css/fonts/matrix.eot");
+  /* IE9 Compat Modes */
+  src: url("../css/fonts/matrix.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../css/fonts/matrix.otf") format("opentype"),
+    /* Open Type Font */ url("../css/fonts/matrix.svg") format("svg"),
+    /* Legacy iOS */ url("../css/fonts/matrix.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../css/fonts/matrix.woff") format("woff"),
+    /* Modern Browsers */ url("../css/fonts/matrix.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+.title {
   font-family: "MATRIX";
   font-size: 50px;
-  color: rgb(0, 32, 211);
+  font-size: 2vw;
+  color: #0f0;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -183,11 +198,11 @@ canvas {
   margin-right: auto;
   left: 0;
   right: 0;
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
-  animation: fadein 2s;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
 }
 img {
   transform: translate(-50%, -50%);
@@ -269,18 +284,4 @@ textarea,
   to {
     opacity: 1;
   }
-}
-@font-face {
-  font-family: "MATRIX";
-  src: url("../css/fonts/matrix.eot");
-  /* IE9 Compat Modes */
-  src: url("../css/fonts/matrix.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../css/fonts/matrix.otf") format("opentype"),
-    /* Open Type Font */ url("../css/fonts/matrix.svg") format("svg"),
-    /* Legacy iOS */ url("../css/fonts/matrix.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../css/fonts/matrix.woff") format("woff"),
-    /* Modern Browsers */ url("../css/fonts/matrix.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
 }
