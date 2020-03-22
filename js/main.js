@@ -7,7 +7,7 @@ var startupAudio = document.getElementById("startup");
 var bgAudio = document.getElementById("bg");
 
 bgAudio.pause();
-$(".title").hide();
+//$(".title").hide();
 
 skull.setAttribute("draggable", false);
 loading.setAttribute("draggable", false);
@@ -32,7 +32,7 @@ setTimeout(function() {
 }, 4550);
 
 setTimeout(function() {
-  $(".title").show();
+  //$(".title").show();
 }, 7500);
 
 /* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
