@@ -191,7 +191,7 @@ canvas {
   font-size: 50px;
   font-size: 2vw;
   color: #0f0;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   position: absolute;
   margin-left: auto;
@@ -202,7 +202,7 @@ canvas {
   -moz-animation: fadein 3s;
   -ms-animation: fadein 3s;
   -o-animation: fadein 3s;
-  animation: fadein 3s;
+  animation: fadein 3s; */
 }
 img {
   transform: translate(-50%, -50%);
