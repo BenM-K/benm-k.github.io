@@ -22,17 +22,23 @@
       id="audio"
       style="display: none"
     ></iframe>
-    <audio id="player" autoplay>
+
+    <audio id="startup" autoplay>
       <source src="/audio/startup.mp3" type="audio/mp3" />
     </audio>
+
     <img src="/img/loading.gif" id="loading" alt="Loading" width="550" />
     <img src="/img/skull.gif" id="skull" alt="Skull" width="75" />
 
-    <!-- <header>
+    <main>
+      <audio id="bg" autoplay loop>
+        <source src="/audio/clubbed.mp3" type="audio/mp3" />
+      </audio>
+
+      <!-- <header>
         <h1 class="matrix">WELCOME TO HACKER.NET</h1>
     </header> -->
 
-    <main>
       <canvas id="c">Your browser doesn't support canvas!</canvas>
     </main>
 
@@ -50,6 +56,7 @@
     </script>
     <script src="/js/plugins.js"></script>
     <script src="/js/main.js"></script>
+
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <!-- <script>
       window.ga = function() {

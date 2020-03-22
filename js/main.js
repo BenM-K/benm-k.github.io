@@ -1,6 +1,9 @@
 var skull = document.getElementById("skull");
 var loading = document.getElementById("loading");
-var audio = document.getElementById("player");
+var startupAudio = document.getElementById("startup");
+var bgAudio = document.getElementById("bg");
+
+bgAudio.pause();
 
 skull.setAttribute("draggable", false);
 loading.setAttribute("draggable", false);
@@ -15,7 +18,8 @@ setTimeout(function() {
 }, 150);
 
 setTimeout(function() {
-  audio.pause();
+  startupAudio.pause();
+  bgAudio.play();
   document.body.style.cursor = "url('/img/cursor.png'), auto";
   marqueeTitle("WELCOME TO HACKER.NET", "...", 100);
   skull.style.display = "none";
