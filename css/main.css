@@ -508,7 +508,7 @@ textarea,
   font-weight: normal;
   font-style: normal;
 }
-/* .scanlines {
+.scanlines {
   position: relative;
   overflow: hidden;
 }
@@ -550,4 +550,4 @@ textarea,
   0% {
     background-position: 0 50%;
   }
-} */
+}
