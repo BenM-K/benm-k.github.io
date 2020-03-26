@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Loading...</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Enter if you must." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="manifest" href="/site.webmanifest" />
@@ -23,7 +23,7 @@
       style="display: none"
     ></iframe>
 
-    <audio id="startup" autoplay>
+    <audio id="startup">
       <source src="/audio/startup.mp3" type="audio/mp3" />
     </audio>
 
@@ -31,13 +31,94 @@
     <img src="/img/skull.gif" id="skull" alt="Skull" width="75" />
 
     <main>
-      <audio id="bg" autoplay loop>
+      <audio id="bg" loop>
         <source src="/audio/clubbed.mp3" type="audio/mp3" />
       </audio>
 
       <header>
-        <h1 class="title">WELCOME TO HACKER.NET</h1>
+        <section id="headersection">
+          <h1 id="title">WELCOME TO HACKER.NET</h1>
+        </section>
       </header>
+
+      <div id="nav">
+        <nav class="links" style="--items: 5;">
+          <a href="index.html">Home</a>
+          <a href="#" onclick="javascript:displayAlert();">Who We Are</a>
+          <a href="#" onclick="javascript:displayAlert();">Our Mission</a>
+          <a href="#" onclick="javascript:displayAlert();">Downloads</a>
+          <a href="#" onclick="javascript:displayAlert();">Contact Us</a>
+          <span class="line"></span>
+        </nav>
+      </div>
+
+      <section id="container">
+        <h2 id="title2">Welcome.</h2>
+        <p class="welcome">
+          I imagine that right now, you’re feeling a bit like Alice. Hmm?
+          Tumbling down the rabbit hole? ... I see it in your eyes. You have the
+          look of a man who accepts what he sees because he is expecting to wake
+          up. Ironically, that’s not far from the truth. Let me tell you why
+          you’re here. You’re here because you know something. What you know you
+          can’t explain, but you feel it. You’ve felt it your entire life, that
+          there’s something wrong with the world. You don’t know what it is, but
+          it’s there, like a splinter in your mind, driving you mad. It is this
+          feeling that has brought you to me. Do you know what I’m talking
+          about? ... Do you want to know what it is...?
+          <span style="color:#0f0;">Modern solutions</span> are everywhere. They
+          are all around us. Even now, in this very website. You can see them
+          when you look out your window or when you turn on your television. You
+          can feel them when you go to work... when you go to church... when you
+          pay your taxes. Unfortunately, no one can be told what
+          <span style="color:#0f0;">modern solutions</span> are. You have to see
+          them for yourself...
+        </p>
+        <br />
+        <p id="title3">
+          <span style="color:red;"
+            >This is your last chance. After this there is no turning
+            back.</span
+          >
+        </p>
+        <p class="welcome2">
+          You take the <span style="color:blue;">blue</span> pill, the story
+          ends, you wake up in your bed and believe whatever you want to
+          believe.
+        </p>
+        <p class="welcome2">
+          You take the <span style="color:red;">red</span> pill, you download
+          <span style="color:#0f0;">modern solutions</span>, stay in Wonderland
+          and I show you how deep the rabbit hole goes...
+        </p>
+        <p class="welcome2">
+          <b
+            ><i
+              >Remember: Modern problems require
+              <span style="color:#0f0;">modern solutions</span>, nothing
+              more.</i
+            ></b
+          >
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <div id="pillbutton1">
+            <p class="pill">
+              <span style="color:blue;">TAKE THE BLUE PILL</span>
+            </p>
+          </div>
+        </a>
+        <a href="downloads/1840035_ModernSolutions.ps1" download>
+          <div id="pillbutton2">
+            <p class="pill">
+              <span style="color:red;">TAKE THE RED PILL</span>
+            </p>
+          </div>
+        </a>
+      </section>
 
       <canvas id="c">Your browser does not support canvas!</canvas>
     </main>
@@ -55,6 +136,11 @@
     </script>
     <script src="/js/plugins.js"></script>
     <script src="/js/main.js"></script>
+    <script type="text/javascript">
+      function displayAlert() {
+        alert("This page is not done yet!");
+      }
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <!-- <script>

@@ -1,18 +1,18 @@
 //TODO:
 //Audio sometimes doesn't play (wait until DOM is ready?)
+//Center title in section
 
 var skull = document.getElementById("skull");
 var loading = document.getElementById("loading");
 var startupAudio = document.getElementById("startup");
 var bgAudio = document.getElementById("bg");
 
-bgAudio.pause();
+$("#title").hide();
+$("#nav").hide();
+$("#headersection").hide();
+$("#container").hide();
 
-$(".title").hide();
-
-skull.setAttribute("draggable", false);
-loading.setAttribute("draggable", false);
-
+//Disable right clicking
 document.addEventListener("contextmenu", event => event.preventDefault());
 
 skull.style.display = "none";
@@ -22,19 +22,36 @@ setTimeout(function() {
   skull.style.display = "block";
 }, 150);
 
+//After loading screen finishes
 setTimeout(function() {
   startupAudio.pause();
+  bgAudio.volume = 0.4;
   bgAudio.play();
+  //Use custom cursor
   document.body.style.cursor = "url('/img/cursor.png'), auto";
+  //Create scrolling title
   marqueeTitle("WELCOME TO HACKER.NET", "...", 100);
   skull.style.display = "none";
   loading.style.display = "none";
-  setInterval(draw, 60);
+  //Display matrix effect
+  setInterval(draw, 45);
 }, 4550);
 
 setTimeout(function() {
-  $(".title").show();
+  $("#headersection").show();
 }, 7000);
+
+setTimeout(function() {
+  $("#title").show();
+}, 8000);
+
+setTimeout(function() {
+  $("#nav").show();
+}, 9000);
+
+setTimeout(function() {
+  $("#container").show();
+}, 10000);
 
 /* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
 function marqueeTitle(c, a, m) {
@@ -46,33 +63,33 @@ function marqueeTitle(c, a, m) {
 }
 
 $(document).ready(function() {
+  //Used to reset the loading gif on every reload of the page
   $("#loading").attr("src", "/img/loading.gif?" + Math.random());
-});
-
-$(function() {
-  resizeCanvas();
+  startupAudio.volume = 0.7;
+  startupAudio.play();
 });
 
 $(window).on("resize", function() {
   resizeCanvas();
 });
 
+//Dynamically resizes the canvas to the width and height of the viewport
 function resizeCanvas() {
   var canvas = $("#c");
   canvas.css("width", $(window).width());
   canvas.css("height", $(window).height());
 }
 
-//Credit: Techgokul (https://gist.github.com/Techgokul/e434ea602bda6840d5ebf95c4be5ebeb)
+//Credit: Techgokul (https://gist.github.com/Techgokul)
 //#region MATRIX
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
-//Making the canvas full screen
+//Make the canvas full screen
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
-//Letters to be used
+//The letters to be used
 var letters =
   "日ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍｦｲｸｺｿﾁﾄﾉﾌﾔﾖﾙﾚﾛﾝZ012345789:・.=*+-<>¦｜çﾘｸ";
 
@@ -84,7 +101,7 @@ var font_size = 15;
 //Number of columns for the rain
 var columns = c.width / font_size;
 
-//An array of drops - one per column
+//An array of drops, one per column
 var drops = [];
 
 //X below is the Y coordinate
@@ -96,7 +113,7 @@ function draw() {
   //Translucent background to show trail
   ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
   ctx.fillRect(0, 0, c.width, c.height);
-  ctx.fillStyle = "#0F0"; //green text
+  ctx.fillStyle = "#0F0"; //Green text
   ctx.font = font_size + "px arial";
 
   //Looping over drops
@@ -108,7 +125,7 @@ function draw() {
     ctx.fillText(text, i * font_size, drops[i] * font_size);
 
     //Sending the drop back to the top randomly after it has crossed the screen
-    //Make the drops randomly scatter on the Y axis
+    //Make the drops randomly scatter across the Y axis
     if (drops[i] * font_size > c.height && Math.random() > 0.975) drops[i] = 0;
 
     //Incrementing Y coordinate
