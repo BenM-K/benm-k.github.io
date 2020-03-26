@@ -481,20 +481,6 @@ textarea,
   --index: var(--items);
 }
 @font-face {
-  font-family: "MATRIX";
-  src: url("../css/fonts/matrix.eot");
-  /* IE9 Compat Modes */
-  src: url("../css/fonts/matrix.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../css/fonts/matrix.otf") format("opentype"),
-    /* Open Type Font */ url("../css/fonts/matrix.svg") format("svg"),
-    /* Legacy iOS */ url("../css/fonts/matrix.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../css/fonts/matrix.woff") format("woff"),
-    /* Modern Browsers */ url("../css/fonts/matrix.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "TSUKI";
   src: url("../css/fonts/heading.eot");
   /* IE9 Compat Modes */
@@ -508,6 +494,7 @@ textarea,
   font-weight: normal;
   font-style: normal;
 }
+/* Credit: Mehdi (https://github.com/meduzen) */
 .scanlines {
   position: relative;
   overflow: hidden;

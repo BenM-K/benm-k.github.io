@@ -1,7 +1,3 @@
-//TODO:
-//Audio sometimes doesn't play (wait until DOM is ready?)
-//Center title in section
-
 var skull = document.getElementById("skull");
 var loading = document.getElementById("loading");
 var startupAudio = document.getElementById("startup");
