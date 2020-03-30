@@ -343,6 +343,7 @@ textarea,
   -ms-user-select: text;
   user-select: text;
 }
+/* From Stack Overflow*/
 @keyframes fadein {
   from {
     opacity: 0;
