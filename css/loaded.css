@@ -268,6 +268,11 @@ a {
 	margin-right: auto;
 	left: 0;
 	right: 0;
+	-webkit-animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	-ms-animation: fadein 1s;
+	-o-animation: fadein 1s;
+	animation: fadein 1s;
 }
 
 .container {
@@ -288,92 +293,6 @@ a {
 	animation: fadein 2s;
 	overflow: auto;
 	overflow-x: hidden;
-}
-
-.inspotitle {
-	font-family: 'Prime-Regular';
-	color: white;
-	font-size: calc(100% + 0.5vw);
-	font-weight: bold;
-	padding-left: 1.2vw;
-	padding-top: 1.5vw;
-	text-align: center;
-}
-
-.gridcontainer {
-	margin: 20px auto;
-	margin-top: 5%;
-	width: 600px;
-	height: 600px;
-	display: grid;
-	grid-template-columns: 300px 300px;
-	grid-row: auto auto;
-	grid-column-gap: 40px;
-	grid-row-gap: 40px;
-}
-
-.box1 {
-	background-color: #333;
-	padding: 20px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-color: #0f0;
-	border-style: solid;
-	border-width: thin;
-	background-image: url("../assets/operating-systems.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.box2 {
-	background-color: #333;
-	padding: 20px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-color: #0f0;
-	border-style: solid;
-	border-width: thin;
-	background-image: url("../assets/clipart-videogames.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.box3 {
-	background-color: #333;
-	padding: 20px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-color: #0f0;
-	border-style: solid;
-	border-width: thin;
-	background-image: url("../assets/malware.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.box4 {
-	background-color: #333;
-	padding: 20px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-color: #0f0;
-	border-style: solid;
-	border-width: thin;
-	background-image: url("../assets/re.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .containertitle {

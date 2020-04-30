@@ -1,7 +1,7 @@
 //var startupAudio = document.getElementById("startup");
 //var bgAudio = document.getElementById("bg");
-var skull = document.getElementById("skull");
-var loading = document.getElementById("loading");
+let skull = document.getElementById("skull");
+let loading = document.getElementById("loading");
 
 $(".bannertitle").hide();
 $(".nav").hide();
@@ -68,37 +68,37 @@ $(window).on("resize", function() {
 
 //Dynamically resizes the canvas to the width and height of the viewport
 function resizeCanvas() {
-    var canvas = $("#c");
+    let canvas = $("#c");
     canvas.css("width", $(window).width());
     canvas.css("height", $(window).height());
 }
 
 //Credit: Techgokul (https://gist.github.com/Techgokul)
 //#region MATRIX
-var c = document.getElementById("c");
-var ctx = c.getContext("2d");
+let c = document.getElementById("c");
+let ctx = c.getContext("2d");
 
 //Make the canvas full screen
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
 //The letters to be used
-var letters = "日ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍｦｲｸｺｿﾁﾄﾉﾌﾔﾖﾙﾚﾛﾝZ012345789:・.=*+-<>¦｜çﾘｸ";
+let letters = "日ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍｦｲｸｺｿﾁﾄﾉﾌﾔﾖﾙﾚﾛﾝZ012345789:・.=*+-<>¦｜çﾘｸ";
 
 //Converting the string into an array of single characters
 letters = letters.split("");
 
-var font_size = 15;
+let font_size = 15;
 
 //Number of columns for the rain
-var columns = c.width / font_size;
+let columns = c.width / font_size;
 
 //An array of drops, one per column
-var drops = [];
+let drops = [];
 
 //X below is the Y coordinate
 //1 = y co-ordinate of the drop (same for every drop initially)
-for (var x = 0; x < columns; x++) drops[x] = 1;
+for (let x = 0; x < columns; x++) drops[x] = 1;
 //Drawing the characters
 function draw() {
     //Black BG for the canvas
@@ -109,9 +109,9 @@ function draw() {
     ctx.font = font_size + "px arial";
 
     //Looping over drops
-    for (var i = 0; i < drops.length; i++) {
+    for (let i = 0; i < drops.length; i++) {
         //A random letter to print
-        var text = letters[Math.floor(Math.random() * letters.length)];
+        let text = letters[Math.floor(Math.random() * letters.length)];
 
         //x = i*font_size, y = value of drops[i]*font_size
         ctx.fillText(text, i * font_size, drops[i] * font_size);
@@ -128,7 +128,7 @@ function draw() {
 
 /* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
 /* function marqueeTitle(c, a, m) {
-  var title = (c || document.title) + " " + (a || "-") + " ";
+  let title = (c || document.title) + " " + (a || "-") + " ";
   setInterval(function() {
     title = title.substring(1) + title.charAt(0);
     document.title = title;

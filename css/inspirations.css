@@ -236,27 +236,11 @@ canvas {
 }
 
 img {
-	transform: translate(-50%, -50%);
-	-webkit-user-select: none;
-	-moz-user-select: -moz-none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	width: 100%;
+	height: auto;
 }
 
 a {
-	cursor: url("/assets/cursorclick.png"), auto;
-}
-
-label {
-	cursor: url("/assets/cursor.png"), auto;
-}
-
-input {
-	cursor: url("/assets/cursorclick.png"), auto;
-}
-
-select {
 	cursor: url("/assets/cursorclick.png"), auto;
 }
 
@@ -310,48 +294,319 @@ select {
 	overflow: auto;
 }
 
-.msgtitle {
+.inspotitle {
 	font-family: 'Prime-Regular';
 	color: white;
 	font-size: calc(100% + 0.5vw);
 	font-weight: bold;
 	padding-left: 1.2vw;
 	padding-top: 1.5vw;
-	padding-bottom: 0.4vw;
 	text-align: center;
 }
 
-.contactform {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-form {
+.gridcontainer {
 	display: grid;
-	padding: 2rem;
-	background: black;
+	grid-template-columns: 300px 300px;
+	grid-row: auto auto;
+	grid-column-gap: 40px;
+	grid-row-gap: 40px;
+	margin: 20px auto;
+	margin-top: 5%;
+	width: 600px;
+	height: 600px;
+}
+
+.p1 {
 	color: #0f0;
-	font-family: "Prime-Regular";
-	min-width: 45%;
+	visibility: hidden;
+	font-family: 'Prime-Regular';
+	color: white;
+	font-size: calc(100% + 0.1vw);
+	font-weight: bold;
+	text-align: center;
 }
 
-form>* {
-	margin-bottom: 1rem;
-}
-
-textarea {
-	resize: none;
-	height: 100%;
-}
-
-.submitbtn {
-	width: 25%;
-	margin-left: 35%;
+.p2 {
 	color: #0f0;
-	background: black;
+	visibility: hidden;
+	font-family: 'Prime-Regular';
+	color: white;
+	font-size: calc(100% + 0.1vw);
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.p3 {
+	color: #0f0;
+	visibility: hidden;
+	font-family: 'Prime-Regular';
+	color: white;
+	font-size: calc(100% + 0.1vw);
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.p4 {
+	color: #0f0;
+	visibility: hidden;
+	font-family: 'Prime-Regular';
+	color: white;
+	font-size: calc(100% + 0.1vw);
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.box1:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.box2:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.box3:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.box4:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.box1 {
+	background-color: #333;
+	padding: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-color: #0f0;
-	padding: 10px;
+	border-style: solid;
+	border-width: thin;
+	background-image: url("../assets/operating-systems.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box2 {
+	background-color: #333;
+	padding: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-color: #0f0;
+	border-style: solid;
+	border-width: thin;
+	background-image: url("../assets/clipart-videogames.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box3 {
+	background-color: #333;
+	padding: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-color: #0f0;
+	border-style: solid;
+	border-width: thin;
+	background-image: url("../assets/malware.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box4 {
+	background-color: #333;
+	padding: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-color: #0f0;
+	border-style: solid;
+	border-width: thin;
+	background-image: url("../assets/re.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.containertitle {
+	font-family: 'Prime-Regular';
+	color: rgb(255, 255, 255);
+	/*font-size: 2vw;*/
+	font-size: calc(100% + 1vw);
+	font-weight: bold;
+	padding-left: 1.2vw;
+	padding-top: 1vw;
+	text-align: center;
+	animation: 1s slide-right 1s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 2vw;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+	/*font-size: 0.8vw;*/
+	font-size: calc(100% + 0.3vw);
+	/* line-height: 1vw; */
+	text-align: center;
+	animation: 1s slide-right 2.5s forwards;
+	transform: translateX(100%);
+}
+
+.containertext2 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 2vw;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.5vw);
+	/* line-height: 0.5vw; */
+	text-align: center;
+	animation: 1s slide-right 4s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext3 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 2vw;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.5vw);
+	/* line-height: 1vw; */
+	text-align: center;
+	animation: 1s slide-right 5.5s forwards;
+	transform: translateX(100%);
+}
+
+.containertext4 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 2vw;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.3vw);
+	/* line-height: 0.5vw; */
+	text-align: center;
+	animation: 1s slide-right 7s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext5 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 0.5vw;
+	padding-left: 22vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.3vw);
+	/* line-height: 0.1vw; */
+	text-align: left;
+	animation: 1s slide-right 8s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext6 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 0.5vw;
+	padding-left: 22vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.3vw);
+	/* line-height: 0.1vw; */
+	text-align: left;
+	animation: 1s slide-right 9s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext7 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 0.5vw;
+	padding-left: 22vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.3vw);
+	/* line-height: 0.1vw; */
+	text-align: left;
+	animation: 1s slide-right 10s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext8 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 0.5vw;
+	padding-left: 22vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.3vw);
+	/* line-height: 0.1vw; */
+	text-align: left;
+	animation: 1s slide-right 11s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext9 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 0.5vw;
+	padding-left: 22vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.3vw);
+	/* line-height: 0.1vw; */
+	text-align: left;
+	animation: 1s slide-right 12s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext10 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 0.5vw;
+	padding-left: 22vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.3vw);
+	/* line-height: 0.1vw; */
+	text-align: left;
+	animation: 1s slide-right 13s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext11 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 1.6vw;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.3vw);
+	/* line-height: 0.1vw; */
+	text-align: center;
+	animation: 1s slide-right 14s forwards;
+	transform: translateX(-100%);
+}
+
+.containertext12 {
+	font-family: 'Prime-Regular';
+	color: white;
+	padding-top: 2.1vw;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+	font-size: calc(100% + 0.5vw);
+	/* line-height: 0.5vw; */
+	text-align: center;
+	animation: 1s slide-right 15.5s forwards;
+	transform: translateX(-100%);
 }
 
 
@@ -581,6 +836,54 @@ textarea,
 
 .links>a:last-of-type:hover~.line {
 	--index: var(--items);
+}
+
+
+/* Credit: Mehdi (https://github.com/meduzen) */
+
+.scanlines {
+	position: relative;
+	overflow: hidden;
+}
+
+.scanlines:before,
+.scanlines:after {
+	display: block;
+	pointer-events: none;
+	content: "";
+	position: absolute;
+}
+
+.scanlines:before {
+	width: 100%;
+	height: 2px;
+	z-index: 2147483649;
+	background: rgba(0, 0, 0, 0.3);
+	opacity: 0.75;
+	animation: scanline 6s linear infinite;
+}
+
+.scanlines:after {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2147483648;
+	background: linear-gradient( to bottom, transparent 50%, rgba(0, 0, 0, 0.3) 51%);
+	background-size: 100% 4px;
+	animation: scanlines 1s steps(60) infinite;
+}
+
+@keyframes scanline {
+	0% {
+		transform: translate3d(0, 200000%, 0);
+	}
+}
+
+@keyframes scanlines {
+	0% {
+		background-position: 0 50%;
+	}
 }
 
 @keyframes slide-right {

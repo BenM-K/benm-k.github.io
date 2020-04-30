@@ -8,7 +8,7 @@
       <link rel="manifest" href="/site.webmanifest" />
       <link rel="apple-touch-icon" href="/icon.png" />
       <link rel="stylesheet" href="/css/normalize.css" />
-      <link rel="stylesheet" href="/css/loaded.css" />
+      <link rel="stylesheet" href="/css/inspirations.css" />
       <meta name="theme-color" content="#fafafa" />
    </head>
    <body class="scanlines">
@@ -19,20 +19,21 @@
             </section>
          </header>
          <div class="nav">
-            <nav class="links" style="--items: 3;">
+            <nav class="links" style="--items: 4;">
                <a href="home.html">Home</a>
+               <a href="javascript:projectsClick()">Projects</a>
                <a href="#">My Inspirations</a>
                <a href="contact.html">Contact Me</a>
                <span class="line"></span>
             </nav>
          </div>
          <section class="container">
-            <p class="inspotitle">Here are some of the things that <span style="color: #0f0;">inspire</span> my computer science career and motivate me to go forward:</p>
+            <p class="inspotitle">Here are some of the things that <span style="color: #0f0;">inspire</span> my computer science career and motivate me to further my knowledge going forward (hover for details):</p>
             <div class="gridcontainer">
-               <div class="box1"></div>
-               <div class="box2"></div>
-               <div class="box3"></div>
-               <div class="box4"></div>
+               <div class="box1"><span class="p1">The complexity along with the knowledge required to build an <span style="color: #0f0;">operating system</span> fascinates me, and makes me want to learn how to do it for myself.</span></div>
+               <div class="box2"><span class="p2">Ever since I was a little kid, how <span style="color: #0f0;">video games</span> were made always interested me. I'd ask myself: How were they made? How could I make something like that?</span></div>
+               <div class="box3"><span class="p3"><span style="color: #0f0;">Malware</span> and <span style="color: #0f0;">malware analysis</span> has always been something that's interested me, one of my dream careers would be to work developing anti-virus software.</span></div>
+               <div class="box4"><span class="p4"><span style="color: #0f0;">Reverse engineering</span> is at the core of what I'm interested in; taking something apart to find out exactly how it was made on the lowest level really interests me, and is why I'm learning assembly language. I hope to use reverse engineering in my career, hopefully dealing with malware analysis.</span></div>
             </div>
          </section>
          <div class="footer">
@@ -58,6 +59,11 @@
       </script>
       <script src="/js/plugins.js"></script>
       <script src="/js/loaded.js"></script>
+      <script>
+         function projectsClick() {
+            alert("This page isn't finished yet!");
+         }
+      </script>
       <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
       <!-- <script>
          window.ga = function() {
