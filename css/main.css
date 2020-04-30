@@ -342,7 +342,7 @@ a {
 	padding-right: 1.5vw;
     /*font-size: 0.8vw;*/
 	font-size: calc(100% + 0.3vw);
-	line-height: 1vw;
+	/* line-height: 1vw; */
 	text-align: center;
 	animation: 1s slide-right 2.5s forwards;
 	transform: translateX(100%);
@@ -355,7 +355,7 @@ a {
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.5vw);
-	line-height: 0.5vw;
+	/* line-height: 0.5vw; */
 	text-align: center;
 	animation: 1s slide-right 4s forwards;
 	transform: translateX(-100%);
@@ -368,7 +368,7 @@ a {
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.5vw);
-	line-height: 1vw;
+	/* line-height: 1vw; */
 	text-align: center;
 	animation: 1s slide-right 5.5s forwards;
 	transform: translateX(100%);
@@ -381,7 +381,7 @@ a {
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.3vw);
-	line-height: 0.5vw;
+	/* line-height: 0.5vw; */
 	text-align: center;
 	animation: 1s slide-right 7s forwards;
 	transform: translateX(-100%);
@@ -390,11 +390,11 @@ a {
 .containertext5 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 2vw;
+	padding-top: 0.5vw;
 	padding-left: 22vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.3vw);
-	line-height: 0.1vw;
+	/* line-height: 0.1vw; */
 	text-align: left;
 	animation: 1s slide-right 8s forwards;
 	transform: translateX(-100%);
@@ -403,11 +403,11 @@ a {
 .containertext6 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 2vw;
+	padding-top: 0.5vw;
 	padding-left: 22vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.3vw);
-	line-height: 0.1vw;
+	/* line-height: 0.1vw; */
 	text-align: left;
 	animation: 1s slide-right 9s forwards;
 	transform: translateX(-100%);
@@ -416,11 +416,11 @@ a {
 .containertext7 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 2vw;
+	padding-top: 0.5vw;
 	padding-left: 22vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.3vw);
-	line-height: 0.1vw;
+	/* line-height: 0.1vw; */
 	text-align: left;
 	animation: 1s slide-right 10s forwards;
 	transform: translateX(-100%);
@@ -429,11 +429,11 @@ a {
 .containertext8 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 2vw;
+	padding-top: 0.5vw;
 	padding-left: 22vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.3vw);
-	line-height: 0.1vw;
+	/* line-height: 0.1vw; */
 	text-align: left;
 	animation: 1s slide-right 11s forwards;
 	transform: translateX(-100%);
@@ -442,11 +442,11 @@ a {
 .containertext9 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 2vw;
+	padding-top: 0.5vw;
 	padding-left: 22vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.3vw);
-	line-height: 0.1vw;
+	/* line-height: 0.1vw; */
 	text-align: left;
 	animation: 1s slide-right 12s forwards;
 	transform: translateX(-100%);
@@ -455,11 +455,11 @@ a {
 .containertext10 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 2vw;
+	padding-top: 0.5vw;
 	padding-left: 22vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.3vw);
-	line-height: 0.1vw;
+	/* line-height: 0.1vw; */
 	text-align: left;
 	animation: 1s slide-right 13s forwards;
 	transform: translateX(-100%);
@@ -468,11 +468,11 @@ a {
 .containertext11 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 3vw;
+	padding-top: 1.6vw;
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.3vw);
-	line-height: 0.1vw;
+	/* line-height: 0.1vw; */
 	text-align: center;
 	animation: 1s slide-right 14s forwards;
 	transform: translateX(-100%);
@@ -481,11 +481,11 @@ a {
 .containertext12 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 3vw;
+	padding-top: 2.1vw;
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
 	font-size: calc(100% + 0.5vw);
-	line-height: 0.5vw;
+	/* line-height: 0.5vw; */
 	text-align: center;
 	animation: 1s slide-right 15.5s forwards;
 	transform: translateX(-100%);
