@@ -185,28 +185,57 @@ img {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a {
-  cursor: url("/img/cursorclick.png"), auto;
+  cursor: url("/assets/cursorclick.png"), auto;
 }
-.welcome {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  color: white;
-  padding-top: 1vw;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 0.65vw;
-  line-height: 1.5vw;
+.banner {
+  background-color: black;
+  background-image: url(../assets/stars.gif);
+  height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
 }
-.welcome2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-  padding-top: 1.5vw;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 0.65vw;
+.bannertitle {
+  font-family: "TSUKI";
+  font-size: 2vw;
+  color: #0f0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
 }
+.container {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 17.5%;
+  left: 15%;
+  width: 69%;
+  height: 72%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0f0;
+  border-width: thin;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
 .pill {
   display: inline;
   font-family: "TSUKI";
@@ -247,72 +276,6 @@ a {
   border-width: thin;
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
-}
-#title {
-  font-family: "TSUKI";
-  font-size: 2vw;
-  color: #0f0;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  -webkit-animation: fadein 3s;
-  -moz-animation: fadein 3s;
-  -ms-animation: fadein 3s;
-  -o-animation: fadein 3s;
-  animation: fadein 3s;
-}
-#headersection {
-  background-color: black;
-  background-image: url(../img/stars.gif);
-  height: 10%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-animation: fadein 3s;
-  -moz-animation: fadein 3s;
-  -ms-animation: fadein 3s;
-  -o-animation: fadein 3s;
-  animation: fadein 3s;
-}
-#title2 {
-  font-family: "TSUKI";
-  color: rgb(255, 255, 255);
-  font-size: 1.4vw;
-  padding-left: 1.2vw;
-  padding-top: 1vw;
-  text-align: center;
-}
-#title3 {
-  font-family: "TSUKI";
-  color: rgb(255, 255, 255);
-  font-size: 1.4vw;
-  padding-left: 1.2vw;
-  padding-top: 1.5vw;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: red;
-}
-#container {
-  background-color: rgba(0, 0, 0, 0.75);
-  position: fixed;
-  top: 17.5%;
-  left: 15%;
-  width: 69%;
-  height: 77%;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #0f0;
-  border-width: thin;
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
-  animation: fadein 2s;
 }
 #skull {
   position: fixed;
@@ -389,7 +352,7 @@ textarea,
   }
 }
 /* Credit: Rock Starwind (https://github.com/RockStarwind)*/
-#nav {
+.nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -481,20 +444,6 @@ textarea,
 .links > a:last-of-type:hover ~ .line {
   --index: var(--items);
 }
-@font-face {
-  font-family: "TSUKI";
-  src: url("../css/fonts/heading.eot");
-  /* IE9 Compat Modes */
-  src: url("../css/fonts/heading.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../css/fonts/heading.otf") format("opentype"),
-    /* Open Type Font */ url("../css/fonts/heading.svg") format("svg"),
-    /* Legacy iOS */ url("../css/fonts/heading.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../css/fonts/heading.woff") format("woff"),
-    /* Modern Browsers */ url("../css/fonts/heading.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
 /* Credit: Mehdi (https://github.com/meduzen) */
 .scanlines {
   position: relative;
@@ -538,4 +487,50 @@ textarea,
   0% {
     background-position: 0 50%;
   }
+}
+@keyframes slide-right {
+  to {
+    transform:translateX(0);
+  }
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'Prime-Regular';
+  padding: 15px;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+/* Imported Fonts */
+@font-face {
+  font-family: "TSUKI";
+  src: url("../css/fonts/heading.eot"); /* IE9 Compat Modes */
+  src: url("../css/fonts/heading.eot?#iefix") format("embedded-opentype"),
+    url("../css/fonts/heading.otf") format("opentype"), /* IE6-IE8 */
+    url("../css/fonts/heading.svg") format("svg"), /* Open Type Font */
+    url("../css/fonts/heading.ttf") format("truetype"), /* Legacy iOS */
+    url("../css/fonts/heading.woff") format("woff"), /* Safari, Android, iOS */
+    url("../css/fonts/heading.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Prime-Regular";
+  src: url("./fonts/Prime-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Prime-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Prime-Regular.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Prime-Regular.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Prime-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Prime-Regular.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Prime-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }
