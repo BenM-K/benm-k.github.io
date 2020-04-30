@@ -187,6 +187,15 @@ img {
 a {
   cursor: url("/assets/cursorclick.png"), auto;
 }
+label {
+  cursor: url("/assets/cursor.png"), auto;
+}
+input {
+  cursor: url("/assets/cursorclick.png"), auto;
+}
+select {
+  cursor: url("/assets/cursorclick.png"), auto;
+}
 .banner {
   background-color: black;
   background-image: url(../assets/stars.gif);
@@ -224,161 +233,41 @@ a {
   -ms-animation: fadein 2s;
   -o-animation: fadein 2s;
   animation: fadein 2s;
+  overflow: auto;
 }
-.containertitle {
+.msgtitle {
   font-family: 'Prime-Regular';
-  color: rgb(255, 255, 255);
-  font-size: 2vw;
+  color:#0f0;
+  font-size: 1vw;
   font-weight: bold;
   padding-left: 1.2vw;
-  padding-top: 1vw;
+  padding-top: 2vw;
   text-align: center;
-  animation: 1s slide-right 1s forwards;
-    transform:translateX(-100%);
 }
-.containertext {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 1vw;
-  text-align: center;
-  animation: 1s slide-right 2.5s forwards;
-    transform:translateX(100%);
+form {
+  display: grid;
+  padding: 2rem;
+  background: black;
+  color: #0f0;
+  font-family: "Prime-Regular";
+  width: 40%;
+  margin-left: 30%;
+  padding-top: 1.5vw;
 }
-.containertext2 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 0.5vw;
-  text-align: center;
-  animation: 1s slide-right 4s forwards;
-    transform:translateX(-100%);
+form > * {
+  margin-bottom: 1rem;
 }
-.containertext3 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 1vw;
-  text-align: center;
-  animation: 1s slide-right 5.5s forwards;
-    transform:translateX(100%);
+textarea {
+  resize: none;
+  height: 100%;
 }
-.containertext4 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 0.5vw;
-  text-align: center;
-  animation: 1s slide-right 7s forwards;
-    transform:translateX(-100%);
-}
-.containertext5 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 22vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 0.1vw;
-  text-align: left;
-  animation: 1s slide-right 8s forwards;
-    transform:translateX(-100%);
-}
-.containertext6 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 22vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 0.1vw;
-  text-align: left;
-  animation: 1s slide-right 9s forwards;
-    transform:translateX(-100%);
-}
-.containertext7 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 22vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 0.1vw;
-  text-align: left;
-  animation: 1s slide-right 10s forwards;
-    transform:translateX(-100%);
-}
-.containertext8 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 22vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 0.1vw;
-  text-align: left;
-  animation: 1s slide-right 11s forwards;
-    transform:translateX(-100%);
-}
-.containertext9 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 22vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 0.1vw;
-  text-align: left;
-  animation: 1s slide-right 12s forwards;
-    transform:translateX(-100%);
-}
-.containertext10 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 2vw;
-  padding-left: 22vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 0.1vw;
-  text-align: left;
-  animation: 1s slide-right 13s forwards;
-    transform:translateX(-100%);
-}
-.containertext11 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 3vw;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 0.8vw;
-  line-height: 0.1vw;
-  text-align: center;
-  animation: 1s slide-right 14s forwards;
-    transform:translateX(-100%);
-}
-.containertext12 {
-  font-family: 'Prime-Regular';
-  color: white;
-  padding-top: 3vw;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 1vw;
-  line-height: 0.5vw;
-  text-align: center;
-  animation: 1s slide-right 15.5s forwards;
-    transform:translateX(-100%);
+.submitbtn {
+  width: 25%;
+  margin-left: 35%;
+  color: #0f0;
+  background: black;
+  border-color: #0f0;
+  padding: 10px;
 }
 .pill {
   display: inline;
@@ -567,50 +456,6 @@ textarea,
 }
 .links > a:last-of-type:hover ~ .line {
   --index: var(--items);
-}
-/* Credit: Mehdi (https://github.com/meduzen) */
-.scanlines {
-  position: relative;
-  overflow: hidden;
-}
-.scanlines:before,
-.scanlines:after {
-  display: block;
-  pointer-events: none;
-  content: "";
-  position: absolute;
-}
-.scanlines:before {
-  width: 100%;
-  height: 2px;
-  z-index: 2147483649;
-  background: rgba(0, 0, 0, 0.3);
-  opacity: 0.75;
-  animation: scanline 6s linear infinite;
-}
-.scanlines:after {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2147483648;
-  background: linear-gradient(
-    to bottom,
-    transparent 50%,
-    rgba(0, 0, 0, 0.3) 51%
-  );
-  background-size: 100% 4px;
-  animation: scanlines 1s steps(60) infinite;
-}
-@keyframes scanline {
-  0% {
-    transform: translate3d(0, 200000%, 0);
-  }
-}
-@keyframes scanlines {
-  0% {
-    background-position: 0 50%;
-  }
 }
 @keyframes slide-right {
   to {
