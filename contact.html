@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Benjamin Morelli-Kirshner - Contact</title>
+    <meta name="description" content="Benjamin Morelli-Kirshner's Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/loaded.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body class="scanlines">
+    <main>
+      <header>
+        <section class="banner">
+          <h1 class="bannertitle">Contact</h1>
+        </section>
+      </header>
+
+      <div class="nav">
+        <nav class="links" style="--items: 3;">
+          <a href="home.html">Home</a>
+          <a href="inspirations.html">My Inspirations</a>
+          <a href="#">Contact Me</a>
+          <span class="line"></span>
+        </nav>
+      </div>
+
+      <section class="container">
+        
+      </section>
+
+      <div class="footer">
+        <p>Benjamin Morelli-Kirshner - 2020</p>
+      </div>
+      <canvas id="c">Your browser does not support canvas!</canvas>
+    </main>
+    <script src="/js/vendor/modernizr-3.8.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="/js/vendor/jquery-3.4.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/loaded.js"></script>
+    <!-- <script src="/js/main.js"></script> -->
+    <script type="text/javascript">
+      function homeClick() {
+        let fileName = location.href.split("/").slice(-1);
+        if (fileName != "index.html" && fileName != "" && fileName != "index.html#")
+        {
+          window.location.pathname = '/index.html';
+        }
+      }
+      function displayAlert() {
+        alert("This page is not done yet!");
+      }
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!-- <script>
+      window.ga = function() {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+  </body>
+</html>
