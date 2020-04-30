@@ -340,7 +340,7 @@ a {
 	padding-top: 2vw;
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
-    /*font-size: 0.8vw;*/
+	/*font-size: 0.8vw;*/
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 1vw; */
 	text-align: center;
@@ -490,6 +490,7 @@ a {
 	animation: 1s slide-right 15.5s forwards;
 	transform: translateX(-100%);
 }
+
 
 /* .pill {
   display: inline;
@@ -795,6 +796,7 @@ textarea,
 	margin-top: 0.5rem;
 	font-size: 0.6rem;
 }
+
 
 /* Imported Fonts */
 

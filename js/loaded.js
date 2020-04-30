@@ -24,15 +24,6 @@
       $(".footer").show();
     }, 9000); */
 
-  /* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
-  /* function marqueeTitle(c, a, m) {
-    var title = (c || document.title) + " " + (a || "-") + " ";
-    setInterval(function() {
-      title = title.substring(1) + title.charAt(0);
-      document.title = title;
-    }, m || 100);
-  } */
-
   $(window).on("resize", function() {
       resizeCanvas();
   });
@@ -96,3 +87,12 @@
       }
   }
   //#endregion
+
+    /* MarqueeTitle v4.0 | MIT License | git.io/vQZbs */
+  /* function marqueeTitle(c, a, m) {
+    var title = (c || document.title) + " " + (a || "-") + " ";
+    setInterval(function() {
+      title = title.substring(1) + title.charAt(0);
+      document.title = title;
+    }, m || 100);
+  } */

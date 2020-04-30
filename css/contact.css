@@ -315,14 +315,19 @@ select {
 	text-align: center;
 }
 
+.contactform {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 form {
 	display: grid;
 	padding: 2rem;
 	background: black;
 	color: #0f0;
 	font-family: "Prime-Regular";
-	width: 40%;
-	margin-left: 30%;
+	min-width: 45%;
 	padding-top: 1.5vw;
 }
 
@@ -343,6 +348,7 @@ textarea {
 	border-color: #0f0;
 	padding: 10px;
 }
+
 
 /* .pill {
 	display: inline;
