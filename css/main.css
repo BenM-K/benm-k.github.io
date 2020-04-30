@@ -340,8 +340,8 @@ a {
 	padding-top: 2vw;
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
-  /*font-size: 0.8vw;*/
-  font-size: calc(100% + 0.3vw);
+    /*font-size: 0.8vw;*/
+	font-size: calc(100% + 0.3vw);
 	line-height: 1vw;
 	text-align: center;
 	animation: 1s slide-right 2.5s forwards;
