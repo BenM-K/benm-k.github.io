@@ -224,7 +224,7 @@ a {
   top: 17.5%;
   left: 15%;
   width: 69%;
-  height: 72%;
+  height: 71.5%;
   border-radius: 10px;
   border-style: solid;
   border-color: #0f0;
@@ -265,7 +265,7 @@ a {
   padding-left: 1.5vw;
   padding-right: 1.5vw;
   font-size: 0.8vw;
-  line-height: 1vw;
+  line-height: 0.5vw;
   text-align: center;
   animation: 1s slide-right 4s forwards;
     transform:translateX(-100%);
@@ -289,7 +289,7 @@ a {
   padding-left: 1.5vw;
   padding-right: 1.5vw;
   font-size: 0.8vw;
-  line-height: 0.1vw;
+  line-height: 0.5vw;
   text-align: center;
   animation: 1s slide-right 7s forwards;
     transform:translateX(-100%);
@@ -385,7 +385,7 @@ a {
   padding-left: 1.5vw;
   padding-right: 1.5vw;
   font-size: 1vw;
-  line-height: 1vw;
+  line-height: 0.5vw;
   text-align: center;
   animation: 1s slide-right 15.5s forwards;
     transform:translateX(-100%);
