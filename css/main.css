@@ -234,6 +234,8 @@ a {
   -ms-animation: fadein 2s;
   -o-animation: fadein 2s;
   animation: fadein 2s;
+  overflow: auto;
+  overflow-x: hidden;
 }
 .containertitle {
   font-family: 'Prime-Regular';
