@@ -385,7 +385,8 @@ a {
 	border-color: #0f0;
 	border-style: solid;
 	border-width: thin;
-	background-image: url("../assets/operating-systems.jpg");
+	/*background-image: url("../assets/operating-systems.jpg");*/
+	background-image: -webkit-image-set( url("../assets/operating-systems-compressed-small.jpg") 1x, url("../assets/operating-systems-compressed-large.jpg") 2x );
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -401,7 +402,7 @@ a {
 	border-color: #0f0;
 	border-style: solid;
 	border-width: thin;
-	background-image: url("../assets/clipart-videogames.png");
+	background-image: -webkit-image-set( url("../assets/clipart-videogames-compressed-small.png") 1x, url("../assets/clipart-videogames-compressed-large.png") 2x );
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -417,7 +418,7 @@ a {
 	border-color: #0f0;
 	border-style: solid;
 	border-width: thin;
-	background-image: url("../assets/malware.png");
+	background-image: -webkit-image-set( url("../assets/malware-compressed-small.png") 1x, url("../assets/malware-compressed-large.png") 2x );
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -433,7 +434,7 @@ a {
 	border-color: #0f0;
 	border-style: solid;
 	border-width: thin;
-	background-image: url("../assets/re.jpg");
+	background-image: -webkit-image-set( url("../assets/re-compressed-small.jpg") 1x, url("../assets/re-compressed-large.jpg") 2x );
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
