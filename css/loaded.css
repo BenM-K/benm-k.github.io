@@ -304,8 +304,8 @@ a {
 	padding-left: 1.2vw;
 	padding-top: 1vw;
 	text-align: center;
-	animation: 1s slide-right 1s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 1s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext {
@@ -318,8 +318,8 @@ a {
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 1vw; */
 	text-align: center;
-	animation: 1s slide-right 2.5s forwards;
-	transform: translateX(100%);
+	/* animation: 1s slide-right 2.5s forwards;
+	transform: translateX(100%); */
 }
 
 .containertext2 {
@@ -331,8 +331,8 @@ a {
 	font-size: calc(100% + 0.5vw);
 	/* line-height: 0.5vw; */
 	text-align: center;
-	animation: 1s slide-right 4s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 4s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext3 {
@@ -344,8 +344,8 @@ a {
 	font-size: calc(100% + 0.5vw);
 	/* line-height: 1vw; */
 	text-align: center;
-	animation: 1s slide-right 5.5s forwards;
-	transform: translateX(100%);
+	/* animation: 1s slide-right 5.5s forwards;
+	transform: translateX(100%); */
 }
 
 .containertext4 {
@@ -357,8 +357,8 @@ a {
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 0.5vw; */
 	text-align: center;
-	animation: 1s slide-right 7s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 7s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext5 {
@@ -370,8 +370,8 @@ a {
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 0.1vw; */
 	text-align: left;
-	animation: 1s slide-right 8s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 8s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext6 {
@@ -383,8 +383,8 @@ a {
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 0.1vw; */
 	text-align: left;
-	animation: 1s slide-right 9s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 9s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext7 {
@@ -396,8 +396,8 @@ a {
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 0.1vw; */
 	text-align: left;
-	animation: 1s slide-right 10s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 10s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext8 {
@@ -409,8 +409,8 @@ a {
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 0.1vw; */
 	text-align: left;
-	animation: 1s slide-right 11s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 11s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext9 {
@@ -422,8 +422,8 @@ a {
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 0.1vw; */
 	text-align: left;
-	animation: 1s slide-right 12s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 12s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext10 {
@@ -435,8 +435,8 @@ a {
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 0.1vw; */
 	text-align: left;
-	animation: 1s slide-right 13s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 13s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext11 {
@@ -448,8 +448,8 @@ a {
 	font-size: calc(100% + 0.3vw);
 	/* line-height: 0.1vw; */
 	text-align: center;
-	animation: 1s slide-right 14s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 14s forwards;
+	transform: translateX(-100%); */
 }
 
 .containertext12 {
@@ -461,8 +461,8 @@ a {
 	font-size: calc(100% + 0.5vw);
 	/* line-height: 0.5vw; */
 	text-align: center;
-	animation: 1s slide-right 15.5s forwards;
-	transform: translateX(-100%);
+	/* animation: 1s slide-right 15.5s forwards;
+	transform: translateX(-100%); */
 }
 
 
