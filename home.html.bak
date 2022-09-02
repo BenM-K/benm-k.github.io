@@ -33,14 +33,14 @@
          <div class="nav">
             <nav class="links" style="--items: 3;">
                <a href="#">Home</a>
-               <a href="https://github.com/blacklinx" target="_blank">Github</a>
+               <a href="https://github.com/blacklinx" target="_blank">GitHub</a>
                <!-- <a href="inspirations.html">My Inspirations</a> -->
                <a href="mailto:benmorellikirshner@gmail.com">Contact Me</a>
                <span class="line"></span>
             </nav>
          </div>
          <section class="container">
-            <h2 class="containertitle">Hey, I'm <span style="color: #0f0;">Ben</span>.</h2>
+            <h2 class="containertitle">Hi, I'm <span style="color: #0f0;">Ben</span>.</h2>
             <p class="containertext">
                I'm a <span style="color: #0f0;">Computer Science Student</span> at John Abbott College.
             </p>
@@ -54,7 +54,7 @@
                I'm passionate about:
             </p>
             <p class="containertext5">
-               • <span style="color: #0f0;">C#/C++</span>
+               • <span style="color: #0f0;">C</span> and <span style="color: #0f0;">C++</span>
             </p>
             <p class="containertext6">
                • <span style="color: #0f0;">Assembly</span> Language
@@ -63,7 +63,7 @@
                • <span style="color: #0f0;">Cybersecurity</span> (Malware <span style="color: #0f0;">Analysis</span>, Reverse <span style="color: #0f0;">Engineering</span>)
             </p>
             <p class="containertext8">
-               • <span style="color: #0f0;">Ethical</span> Hacking
+               • PC <span style="color: #0f0;">Hardware</span>
             </p>
             <p class="containertext9">
                • <span style="color: #0f0;">Gaming</span>
@@ -75,7 +75,7 @@
                ... and <span style="color: #0f0;">everything</span> related to <span style="color: #0f0;">technology.</span>
             </p>
             <p class="containertext12">
-               Want to learn more about me? Contact me? Check out the links above
+               Check out my GitHub or contact me with the links above.
             </p>
             <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                <div id="pillbutton1">
