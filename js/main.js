@@ -21,6 +21,7 @@ document.body.style.cursor = "none";
 //Show skull
 setTimeout(function() {
     skull.style.display = "block";
+    document.title = "Loading...";
 }, 150);
 
 //After loading screen finishes:
