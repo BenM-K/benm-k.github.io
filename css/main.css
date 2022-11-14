@@ -273,6 +273,7 @@ a {
 	background-image: url(../assets/stars.gif);
 	height: 10%;
 	position: absolute;
+	white-space: pre;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -348,7 +349,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 	
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 1s;
 	visibility: hidden;
 }
@@ -377,7 +378,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 2s;
 	visibility: hidden;
 }
@@ -406,7 +407,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 4s;
 	visibility: hidden;
 }
@@ -435,7 +436,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 5s;
 	visibility: hidden;
 }
@@ -464,7 +465,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 7s;
 	visibility: hidden;
 }
@@ -493,7 +494,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 8s;
 	visibility: hidden;
 }
@@ -522,7 +523,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 11s;
 	visibility: hidden;
 }
@@ -551,7 +552,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 12s;
 	visibility: hidden;
 }
@@ -580,7 +581,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 13s;
 	visibility: hidden;
 }
@@ -609,7 +610,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 14s;
 	visibility: hidden;
 }
@@ -638,7 +639,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 15s;
 	visibility: hidden;
 }
@@ -667,7 +668,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 17s;
 	visibility: hidden;
 }
@@ -696,7 +697,7 @@ a {
   	margin: 0 auto;
   	letter-spacing: .05em;
 
-  	animation: typing 3.5s steps(60, end) forwards;
+  	animation: typing 3.5s steps(1000, end) forwards;
 	animation-delay: 19s;
 	visibility: hidden;
 }
@@ -959,7 +960,7 @@ textarea,
 	width: 100%;
 	height: 2px;
 	z-index: 2147483649;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.15);
 	opacity: 0.75;
 	animation: scanline 6s linear infinite;
 }
@@ -970,7 +971,7 @@ textarea,
 	bottom: 0;
 	left: 0;
 	z-index: 2147483648;
-	background: linear-gradient( to bottom, transparent 50%, rgba(0, 0, 0, 0.3) 51%);
+	background: linear-gradient( to bottom, transparent 50%, rgba(0, 0, 0, 0.15) 51%);
 	background-size: 100% 4px;
 	animation: scanlines 1s steps(60) infinite;
 }
@@ -1000,6 +1001,7 @@ textarea,
 	width: 100%;
 	background-color: black;
 	color: white;
+	white-space: nowrap;
 	text-align: center;
 	font-family: 'Prime-Regular';
 	padding: 15px;
@@ -1012,7 +1014,7 @@ textarea,
 
 .credits {
 	margin-top: 0.5rem;
-	font-size: 0.6rem;
+	font-size: 0.5rem;
 }
 
 
