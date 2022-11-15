@@ -309,7 +309,7 @@ a {
 	top: 17.5%;
 	left: 10%;
 	width: 80%;
-	height: 71.5%;
+	height: 73%;
 	border-radius: 10px;
 	border-style: solid;
 	border-color: #0f0;
@@ -659,7 +659,7 @@ a {
 .containertext11 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 1.5vw;
+	padding-top: 2vw;
 	font-size: calc(100% + 0.3vw);
 	text-align: center;
 
@@ -688,8 +688,8 @@ a {
 .containertext12 {
 	font-family: 'Prime-Regular';
 	color: white;
-	padding-top: 1.6vw;
-	font-size: calc(100% + 0.6vw);
+	padding-top: 1.7vw;
+	font-size: calc(100% + 0.7vw);
 	text-align: center;
 
 	overflow: hidden;
@@ -1004,7 +1004,7 @@ textarea,
 	white-space: nowrap;
 	text-align: center;
 	font-family: 'Prime-Regular';
-	padding: 15px;
+	padding: 3px;
 	-webkit-animation: fadein 2s;
 	-moz-animation: fadein 2s;
 	-ms-animation: fadein 2s;
