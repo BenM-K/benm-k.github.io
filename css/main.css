@@ -770,9 +770,6 @@ textarea,
 	user-select: text;
 }
 
-
-/* Generic fade in, from Stack Overflow */
-
 @keyframes fadein {
 	from {
 		opacity: 0;
@@ -939,7 +936,6 @@ textarea,
 .links>a:last-of-type:hover~.line {
 	--index: var(--items);
 }
-
 
 /* Credit: Mehdi (https://github.com/meduzen) */
 
