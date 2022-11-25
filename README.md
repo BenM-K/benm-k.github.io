@@ -1,3 +1,3 @@
 # benm-k.github.io
 
-Personal website/portfolio.
+Personal portfolio.
